@@ -1,0 +1,207 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: arial;
+}
+
+div#container{
+width: 1020px;
+height: 1170px;
+margin: 0 auto;
+}
+div#menu{
+	width: 1020px;
+	margin: 0 auto;
+	height: 106px;
+	background-image: url(img/cabecalho-fundo.gif);
+	margin-bottom: 20px;
+}
+div#menu h1,h2{
+	display: inline-block;
+}
+div#menu h1{
+	padding: 15px 380px 10px 40px;
+}
+nav ul{
+	height:45px;
+	border-radius: 6px;
+	background-image: url(img/menuH-fundo.gif);
+}
+nav ul li{
+	height: 28px;
+	display: inline-block;
+	color: #fff;
+	padding: 12px 60px 5px 60px;
+	margin: auto 6px auto 6px;
+	font-size: 18px;
+	text-align: center;
+}
+nav ul li:hover{
+	background-color: #222;
+	border-radius: 4px;
+
+}
+
+li#casa{
+	padding: 5px 10px 5px 10px;
+	margin-left: 0;
+}
+span{
+	color: #fff;
+}
+div#bannercontainer{
+	background-image: url(img/banner-fundo.jpg);
+	background-repeat: no-repeat;
+}
+div#banner{
+	position: static;
+	z-index: 2;
+
+}
+div#slide {
+	
+	width: 736px;
+	height: 397px;
+	overflow: hidden;
+	position: absolute;
+	top: 126px;
+	right: 240px;
+	z-index: -1;
+}
+div#slide img.dir{
+	position: absolute;
+
+	opacity: 0;
+	animation-name: animacao;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+}
+@keyframes animacao{
+	25%{
+		opacity: 0;
+		transform:scale(1,1.);
+	}
+	30%{
+		opacity: 1;
+	}
+	70%{
+		opacity: 0;
+	}
+	75%{
+		opacity: 1;
+	}
+} 
+img.dir:nth-child(1){
+
+}
+img.dir:nth-child(2){
+	animation-delay: 5s;
+}
+img.dir:nth-child(3){
+	animation-delay: 10s;
+}
+div#servicos{
+	height: 232px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	
+}
+div#servicos div#caixa1,div#caixa2,div#caixa3{
+	width: 326px;
+	height: 116px;
+	display: inline-block;
+	float: left;
+	border-radius: 6px;
+	background-color: rgb(246,164,15);
+}
+div#caixa1,div#caixa2{
+	margin-right: 21px;
+}
+div#servicos a{
+	text-decoration: none;
+	color: #000;
+	padding: 6px 24px 6px 24px;
+	display: inline-block;
+	margin-top: 2px;
+	margin-left: 70px;
+	height: auto;
+	line-height: auto;
+	background-image: url(img/botao-fundo.gif);
+	border-radius: 6px;
+}
+div#servicos h2{
+	background-image: url(img/titulo-servicos.gif);
+	width: 326px;
+	height: 66px;
+	text-align: center;
+	line-height: 66px;
+	border-radius: 6px;
+}
+div.descricao{
+	background-image: url(img/servicos-fundo.gif);
+	width: 302px;
+	height: 116px;
+	padding: 20px 6px 18px 18px;
+	color: #fff;
+	border-radius: 6px;
+}
+div.descricao p{
+	padding-bottom: 14px;
+}
+div#conteudo{
+	width: 1020;
+	height: 270px;
+	margin-bottom: 20px;
+}
+article{
+	width: 595px;
+	height: 270px;
+	float: left;
+	padding-left: 65px;
+	margin-right: 70px;
+
+}
+article h1{
+	color: #f6a20e;
+	font-size: 42px;
+}
+article h4{
+	margin-bottom: 15px;
+}
+section{
+	width: 280px;
+	height: 270px;
+	float: left;
+
+}
+section h2{
+	font-size: 30px;
+	padding: 8px;
+}
+div.foto img{
+	float: left;
+	margin-right: 16px;
+}
+div.foto p{
+	display: inline-block;
+	width: 180px;
+	margin-bottom: 8px;
+	float: left;
+}
+footer{
+	color: #fff;
+	background-color: rgb(43,43,43);
+	width: 1020px;
+	height: 80px;
+	border-radius: 6px;
+	text-align: center;
+}
+footer a img{
+	border-radius: 6px;
+}
+footer p{
+	padding: 10px 0 6px 0;
+}
+span#rodape{
+	color: rgb(246,164,16);
+}
